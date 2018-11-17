@@ -8,6 +8,15 @@ const MongoClient = require('mongodb').MongoClient;
 
 const uri = 'mongodb+srv://cdaAdmin:q3iIPBqxNiyb570y@cda-db-kv5tl.mongodb.net/test?retryWrites=true';
 
+
+app.use(express.static(__dirname + '/dist/cda'));
+
+const path = require('path');
+
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname + '/dist/cda/index.html'));
+});
+
 MongoClient.connect(uri, function(err, client) {
   const collection = client.db("test").collection("devices");
   // perform actions on the collection object
