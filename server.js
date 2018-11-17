@@ -17,12 +17,12 @@ app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/cda/index.html'));
 });
 
-MongoClient.connect(uri, function(err, client) {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  console.log('created');
-  client.close();
-});
+// MongoClient.connect(uri, function(err, client) {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   console.log('created');
+//   client.close();
+// });
 
 
 const getData = (url) => {
