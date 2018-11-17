@@ -9,12 +9,12 @@ const MongoClient = require('mongodb').MongoClient;
 const uri = 'mongodb+srv://cdaAdmin:q3iIPBqxNiyb570y@cda-db-kv5tl.mongodb.net/test?retryWrites=true';
 
 
-app.use(express.static(__dirname + '/dist/cda'));
+app.use(express.static(__dirname + '/dist'));
 
 const path = require('path');
 
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/cda/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
 // MongoClient.connect(uri, function(err, client) {
