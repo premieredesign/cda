@@ -2,6 +2,7 @@
   "name": "cda",
   "version": "0.0.0",
   "scripts": {
+    "postinstall": "ng build --aot",
     "ng": "ng",
     "dev": "concurrently --kill-others \"yarn start\" \"yarn node-server\"",
     "start": "node server.js",
