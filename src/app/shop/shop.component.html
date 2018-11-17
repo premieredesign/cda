@@ -1,0 +1,86 @@
+<nav-bar></nav-bar>
+<div class="overlay-bk"></div>
+<div class="store-bk"></div>
+<div class="main container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 jumbotron">
+      <h1 class="display-4 m-b-2">CDA | Apparel</h1>
+      <p>CDA is a online shopping apparel company that specialize in athletic wear</p>
+      <p>Complete Dominance Athletics is a sports wear retailer based in Detroit, Michigan. Complete Dominance Athletics offers the most comprehensive selection in town and arguably on the internet/mail order as well. By offering the most complete selection as well as a knowledge support staff, Complete Dominance Athletics will quickly gain market share. Detroit was chose because of its diverse, active culture. Complete Dominance Athletics is a Michigan Base LLC.</p>
+    </div>
+  </div>
+
+  <!-- T Shirts -->
+  <div *ngFor="let cda of cdaApparel?.MENS?.TSHIRTS?.BLACK">
+    <div class="col-xs-4">
+      <img class="red" [src]="cda?.IMG" alt="Sports Apparel"/>
+      <div class="caption">
+        <h6>Sports | #25614</h6><a class="btn btn-primary" href="/contact">Order Now</a>
+      </div>
+    </div>
+  </div>
+  <div *ngFor="let cda of cdaApparel?.MENS?.TSHIRTS?.GRAY">
+    <div class="col-xs-4">
+      <img class="red" [src]="cda?.IMG" alt="Sports Apparel"/>
+      <div class="caption">
+        <h6>Sports | #25614</h6><a class="btn btn-primary" href="/contact">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sports -->
+  <div *ngFor="let cda of cdaApparel?.MENS?.SPORTS?.TOPS">
+    <div class="col-xs-4">
+      <img class="blue" [src]="cda?.IMG" alt="Sports Apparel"/>
+      <div class="caption">
+        <h6>Sports | #25614</h6><a class="btn btn-primary" href="/contact">Order Now</a>
+      </div>
+    </div>
+  </div>
+  <div *ngFor="let cda of cdaApparel?.MENS?.SPORTS?.BOTTOMS">
+    <div class="col-xs-4">
+      <img class="blue" [src]="cda?.IMG" alt="Sports Apparel"/>
+      <div class="caption">
+        <h6>Sports | #25614</h6><a class="btn btn-primary" href="/contact">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Women Sports -->
+  <div *ngFor="let cda of cdaApparel?.WOMENS?.TSHIRTS">
+    <div class="col-xs-4">
+      <img class="teal" [src]="cda?.IMG" alt="Sports Apparel"/>
+      <div class="caption">
+        <h6>Sports | #25614</h6><a class="btn btn-primary" href="/contact">Order Now</a>
+      </div>
+    </div>
+  </div>
+  <div *ngFor="let cda of cdaApparel?.WOMENS?.SPORTS">
+    <div class="col-xs-4">
+      <img class="purple" [src]="cda?.IMG" alt="Sports Apparel"/>
+      <div class="caption">
+        <h6>Sports | #25614</h6><a class="btn btn-primary" href="/contact">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hats  -->
+  <div *ngFor="let cda of cdaApparel?.HATS">
+    <div class="col-xs-4">
+      <img class="rotate90 blue-2" [src]="cda?.IMG" alt="Sports Apparel"/>
+      <div class="caption">
+        <h6>Sports | #25614</h6><a class="btn btn-primary" href="/contact">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hats  -->
+  <div *ngFor="let cda of cdaApparel?.WATCHES">
+    <div class="col-xs-4">
+      <img class="teal" [src]="cda?.IMG" alt="Sports Apparel"/>
+      <div class="caption">
+        <h6>Sports | #25614</h6><a class="btn btn-primary" href="/contact">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
