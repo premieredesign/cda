@@ -5,7 +5,7 @@
     "postinstall": "ng build --aot",
     "ng": "ng",
     "dev": "concurrently --kill-others \"yarn start\" \"yarn node-server\"",
-    "start": "node server.js",
+    "start": "node server.js --proxy-config proxy.config.json",
     "prod": "ng serve --proxy-config proxy.config.json -o",
     "node-server": "nodemon server.js",
     "server": "node server.js",
